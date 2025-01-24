@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食疗方案</title>
+    <style>
+		body {
+			font-family: Arial, sans-serif; /* 字体为 Arial，如果 Arial 不可用，则使用 sans-serif 字体族作为后备字体 */
+			line-height: 1.6; /* 行高为字体大小的 1.6 倍 */
+			margin: 20px; /* 主体内容的外边距为 20 像素 */
+			background-color: #f9f9f9; /* 背景颜色为浅灰色 */
+			font-size: 24px; /* 页面的整体字体大小*/
+		}
+		h1 {
+			color: #333; /* 设置一级标题（h1）的文本颜色为深灰色 */
+			text-align: center; /* 居中对齐 */
+			margin-bottom: 30px; /* 下方添加 30 像素的外边距 */
+			font-size: 32px; /* 字体大小为 32 像素 */
+		}
+		h2 {
+			color: #444; /* 设置二级标题（h2）的文本颜色为稍浅一点的灰色 */
+			border-bottom: 2px solid #ddd; /* 下方添加一条 2 像素宽的实线边框，颜色为更浅的灰色（#ddd） */
+			padding-bottom: 5px; /* 底部添加 5 像素的内边距 */
+			margin-top: 30px; /* 上方添加 30 像素的外边距 */
+			font-size: 28px; /* 字体大小为 28 像素 */
+		}
+		ul {
+			list-style-type: none; /* 去除无序列表（ul）的默认列表样式，如项目符号 */
+			padding-left: 0; /* 将无序列表的左边内边距设置为 0，避免列表内容缩进 */
+		}
+		li {
+			margin-bottom: 15px; /* 在列表项（li）之间添加 15 像素的下边距，增加垂直间距，提高可读性 */
+		}
+		.recipe {
+			border: 1px solid #ddd; /* 为包含每个食谱的容器（class 为 recipe）添加一个 1 像素宽的边框，颜色为浅灰色（#ddd），形成一个矩形的边框效果 */
+			padding: 30px; /* 在容器内部添加 20 像素的内边距，避免内容紧贴边框 */
+			margin-bottom: 40px; /* 在容器底部添加 30 像素的外边距，分隔不同的食谱容器 */
+			background-color: #fff; /* 将容器的背景颜色设置为白色，使其与页面背景区分开来 */
+			border-radius: 5px; /* 给容器添加 5 像素的圆角，使边框看起来更柔和，更具现代感 */
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 为容器添加一个阴影效果，水平偏移为 0，垂直偏移为 2 像素，模糊半径为 5 像素，颜色为黑色且透明度为 0.1 的阴影，增强立体感 */
+		}
+		.recipe h3 {
+			color: #555; /* 设置食谱名称（h3）的颜色为比二级标题稍深一点的灰色，#555 是一个中等灰度的颜色代码 */
+			font-size: 24px; /* 将食谱名称的字体大小设置为 26 像素，使其比普通文本大，更突出 */
+		}
+		p {
+			margin: 10px 0; /* 在段落（p）元素的上下添加 5 像素的外边距，使段落之间有一定的垂直间距，提高段落的可读性 */
+		}
+		.ingredients {
+			font-weight: bold; /* 将类名为 ingredients 的元素内的文本设置为粗体，用于突出显示食谱的材料部分 */
+			font-size: 18px; /* 设置材料部分的字体大小为 24 像素，与整体字体大小一致 */
+		}
+		.instructions {
+			font-style: italic; /* 将类名为 instructions 的元素内的文本设置为斜体，用于区分做法部分 */
+			font-size: 18px; /* 设置做法部分的字体大小为 24 像素，与整体字体大小一致 */
+		}
+		.principle {
+			color: #777; /* 将类名为 principle 的元素内的文本颜色设置为较浅的灰色，用于区分原理部分 */
+			font-size: 18px; /* 设置原理部分的字体大小为 24 像素，与整体字体大小一致 */
+		}
+    </style>
+</head>
+<body>
+    <h1>食疗建议</h1>
+    <div class="recipe">
+        <h2>一、改善便秘</h2>
+        <ul>
+            <li>
+                <h3>香蕉燕麦粥</h3>
+                <p class="ingredients"><strong>材料：</strong>香蕉1 - 2根、燕麦30 - 50克、牛奶200 - 300毫升、蜂蜜适量。</p>
+                <p class="instructions"><strong>做法：</strong>将燕麦放入锅中，加入适量的水煮熟。香蕉去皮切成小块，放入燕麦粥中，倒入牛奶，继续煮至沸腾，稍微冷却后加入适量蜂蜜搅拌均匀。</p>
+                <p class="principle"><strong>原理：</strong>香蕉富含膳食纤维，能够促进肠道蠕动，帮助排便。燕麦中的β - 葡聚糖也有很好的通便作用，牛奶可以提供蛋白质和钙等营养成分，蜂蜜有一定的润滑肠道作用。</p>
+            </li>
+            <li>
+                <h3>菠菜猪血汤</h3>
+                <p class="ingredients"><strong>材料：</strong>菠菜200 - 300克、猪血100 - 150克、姜、蒜、盐、鸡精、食用油适量。</p>
+                <p class="instructions"><strong>做法：</strong>菠菜洗净切段，猪血切成小块，用开水焯一下。锅中热油，放入姜蒜爆香，加入适量清水，放入猪血煮几分钟，再加入菠菜，煮至菠菜熟透，加盐和鸡精调味。</p>
+                <p class="principle"><strong>原理：</strong>菠菜含有丰富的膳食纤维和维生素，猪血中的铁和蛋白质含量高，而且猪血本身也有一定的润滑肠道作用，有助于改善便秘。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>二、缓解胸闷（可能和呼吸道有关）</h2>
+        <ul>
+            <li>
+                <h3>百合莲子银耳羹</h3>
+                <p class="ingredients"><strong>材料：</strong>百合10 - 15克、莲子10 - 15克、银耳半朵、冰糖适量。</p>
+                <p class="instructions"><strong>做法：</strong>银耳泡发后撕成小朵，百合和莲子洗净。将所有材料放入锅中，加入适量清水，大火煮开后转小火炖煮30 - 40分钟，至材料软烂，加入适量冰糖调味。</p>
+                <p class="principle"><strong>原理：</strong>百合和银耳有润肺止咳、清心安神的作用，莲子能养心安神，对于呼吸道和情绪都有一定的舒缓作用，在一定程度上可能减轻胸闷的感觉。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>三、改善睡眠和情绪</h2>
+        <ul>
+            <li>
+                <h3>酸枣仁小米粥</h3>
+                <p class="ingredients"><strong>材料：</strong>酸枣仁10 - 15克、小米50 - 100克、红枣3 - 5颗、红糖适量。</p>
+                <p class="instructions"><strong>做法：</strong>酸枣仁捣碎，红枣去核切碎。小米洗净后放入锅中，加入酸枣仁、红枣和适量的水，煮至小米开花，粥变浓稠，加入适量红糖搅拌均匀。</p>
+                <p class="principle"><strong>原理：</strong>酸枣仁有镇静安神的作用，小米富含色氨酸，能够促进大脑合成褪黑素，帮助睡眠。红枣可以补气养血，红糖有一定的暖身和舒缓情绪作用，对于改善睡眠和情绪有帮助。</p>
+            </li>
+            <li>
+                <h3>香蕉牛奶饮</h3>
+                <p class="ingredients"><strong>材料：</strong>香蕉1 - 2根、牛奶200 - 300毫升、蜂蜜适量。</p>
+                <p class="instructions"><strong>做法：</strong>香蕉去皮切成小块，放入搅拌机中，加入牛奶，搅拌成奶昔状，倒入杯中，加入适量蜂蜜。</p>
+                <p class="principle"><strong>原理：</strong>香蕉含有色氨酸和维生素B6，能够帮助身体合成血清素，血清素可以调节情绪、改善睡眠。牛奶中的钙和蛋白质也有助于缓解焦虑情绪。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>四、改善身体疲劳和沉重感</h2>
+        <ul>
+            <li>
+                <h3>红枣桂圆粥</h3>
+                <p class="ingredients"><strong>材料：</strong>红枣5 - 10颗、桂圆10 - 15颗、糯米50 - 100克、红糖适量。</p>
+                <p class="instructions"><strong>做法：</strong>红枣去核，桂圆去核。糯米洗净后放入锅中，加入红枣、桂圆和适量的水，煮至糯米软烂，加入适量红糖调味。</p>
+                <p class="principle"><strong>原理：</strong>红枣和桂圆都有补气养血的作用，能够改善身体的气血不足情况，糯米提供能量，对于缓解身体疲劳和沉重感有一定的帮助。</p>
+            </li>
+            <li>
+                <h3>山药炖排骨</h3>
+                <p class="ingredients"><strong>材料：</strong>山药200 - 300克、排骨200 - 300克、姜、蒜、盐、料酒、生抽、食用油适量。</p>
+                <p class="instructions"><strong>做法：</strong>山药去皮切成小块，排骨洗净切段，用开水焯一下。锅中热油，放入姜蒜爆香，加入排骨翻炒，加入料酒、生抽继续翻炒，然后加入适量清水，大火煮开后转小火炖煮30 - 40分钟，加入山药再炖煮20 - 30分钟，至山药和排骨熟透，加盐调味。</p>
+                <p class="principle"><strong>原理：</strong>山药富含多种营养成分，如淀粉酶、多酚氧化酶等，有利于脾胃消化吸收，能够为身体补充能量。排骨含有丰富的蛋白质和钙等营养成分，有助于增强体力，减轻身体疲劳。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>五、改善手脚冰凉</h2>
+        <ul>
+            <li>
+                <h3>当归生姜羊肉汤</h3>
+                <p class="ingredients"><strong>材料：</strong>当归10 - 15克、生姜10 - 15克、羊肉200 - 300克、盐、料酒、葱适量。</p>
+                <p class="instructions"><strong>做法：</strong>羊肉洗净切块，用开水焯一下。当归洗净，生姜切片。锅中放入羊肉、当归、生姜、葱、料酒和适量清水，大火煮开后转小火炖煮1.5 - 2小时，至羊肉熟烂，加盐调味。</p>
+                <p class="principle"><strong>原理：</strong>当归有补血活血的作用，生姜能温中散寒，羊肉是温热性食物，富含蛋白质等营养成分，这道汤可以促进血液循环，改善手脚冰凉的情况。</p>
+            </li>
+            <li>
+                <h3>红糖姜茶</h3>
+                <p class="ingredients"><strong>材料：</strong>红糖10 - 15克、生姜3 - 5片。</p>
+                <p class="instructions"><strong>做法：</strong>生姜洗净切丝，放入锅中，加入适量清水煮开，加入红糖，继续煮至红糖融化。</p>
+                <p class="principle"><strong>原理：</strong>生姜可以促进血液循环，红糖有暖身的作用，两者搭配可以有效改善手脚冰凉。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>六、改善皮肤状况（身体和面部）</h2>
+        <ul>
+            <li>
+                <h3>猪蹄黄豆汤</h3>
+                <p class="ingredients"><strong>材料：</strong>猪蹄1 - 2只、黄豆50 - 100克、姜、蒜、盐、料酒、生抽、食用油适量。</p>
+                <p class="instructions"><strong>做法：</strong>猪蹄洗净切块，用开水焯一下。黄豆提前泡发。锅中热油，放入姜蒜爆香，加入猪蹄翻炒，加入料酒、生抽继续翻炒，然后加入适量清水，放入黄豆，大火煮开后转小火炖煮1.5 - 2小时，至猪蹄和黄豆软烂，加盐调味。</p>
+                <p class="principle"><strong>原理：</strong>猪蹄含有丰富的胶原蛋白，黄豆中的大豆异黄酮对皮肤有一定的好处，这道汤可以增加皮肤的弹性，改善皮肤干燥等问题。</p>
+            </li>
+            <li>
+                <h3>红枣枸杞银耳羹（皮肤和身体综合）</h3>
+                <p class="ingredients"><strong>材料：</strong>红枣5 - 10颗、枸杞10 - 15克、银耳半朵、冰糖适量。</p>
+                <p class="instructions"><strong>做法：</strong>银耳泡发后撕成小朵，红枣去核，枸杞洗净。将所有材料放入锅中，加入适量清水，大火煮开后转小火炖煮30 - 40分钟，至材料软烂，加入适量冰糖调味。</p>
+                <p class="principle"><strong>原理：</strong>红枣和枸杞都有抗氧化作用，能够改善肤色暗沉。银耳可以滋阴润肺，对于皮肤干燥也有一定的改善作用，同时对身体也有滋补功效。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>七、改善头发状况</h2>
+        <ul>
+            <li>
+                <h3>黑芝麻糊</h3>
+                <p class="ingredients"><strong>材料：</strong>黑芝麻50 - 100克、糯米30 - 50克、冰糖适量。</p>
+                <p class="instructions"><strong>做法：</strong>黑芝麻洗净炒熟，糯米洗净。将黑芝麻和糯米放入搅拌机中，打成粉末状。锅中加入适量清水，放入黑芝麻糯米粉，搅拌均匀，煮至浓稠，加入适量冰糖调味。</p>
+                <p class="principle"><strong>原理：</strong>黑芝麻富含蛋白质、维生素E和不饱和脂肪酸等营养成分，能够滋养头发，改善发质，促进头发生长。糯米可以使糊更加浓稠，增加口感。</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recipe">
+        <h2>八、改善生殖系统（月经和白带）</h2>
+        <ul>
+            <li>
+                <h3>红糖姜片鸡蛋汤</h3>
+                <p class="ingredients"><strong>材料：</strong>红糖10 - 15克、生姜3 - 5片、鸡蛋1 - 2个。</p>
+                <p class="instructions"><strong>做法：</strong>生姜洗净切丝，鸡蛋打散。锅中加入适量清水，放入姜丝煮开，倒入鸡蛋液，搅拌成蛋花，加入红糖，继续煮至红糖融化。</p>
+                <p class="principle"><strong>原理：</strong>红糖有暖宫的作用，生姜可以驱寒，鸡蛋提供蛋白质，对于月经不调、痛经等情况有一定的缓解作用，也有助于改善身体在经期的抵抗力，对于白带异常可能因体质改善而有辅助作用。</p>
+            </li>
+            <li>
+                <h3>山药薏米芡实粥（改善白带）</h3>
+                <p class="ingredients"><strong>材料：</strong>山药200 - 300克、薏米30 - 50克、芡实30 - 50克、大米50 - 100克。</p>
+                <p class="instructions"><strong>做法：</strong>山药去皮切成小块，薏米和芡实提前泡发，大米洗净。将所有材料放入锅中，加入适量清水，煮至粥浓稠。</p>
+                <p class="principle"><strong>原理：</strong>薏米和芡实有健脾祛湿的作用，山药能够补脾养胃，对于改善白带异常可能因体内湿气去除而起到积极效果。</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
